@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Load projects from localStorage
+    loadProjects();
+    
     // Project Filtering
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -216,3 +219,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Function to load projects from localStorage
+function loadProjects() {
+    const projectsGrid = document.querySelector('.projects-grid');
+    if (!projectsGrid) return;
+    
+    // Get projects from localStorage or use default if not available
+    let projects = JSON.parse(localStorage.getItem('projects'));
+    
+    // If no projects in localStorage, don't do anything (the default HTML projects will show)
+    if (!projects) return;
+    
+    // Clear existing projects
+    projectsGrid.innerHTML = '';
+    
+    // Add projects to grid
+    projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'project-card';
+        projectCard.setAttribute('data-category', project.category);
+        
+        projectCard.innerHTML = `
+            <div class="project-img">
+                <img src="${project.image}" alt="${project.name}">
+            </div>
+            <div class="project-info">
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+                <span class="project-category">${capitalizeFirstLetter(project.category)}</span>
+            </div>
+        `;
+        
+        projectsGrid.appendChild(projectCard);
+    });
+}
+
+// Helper function to capitalize first letter
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
