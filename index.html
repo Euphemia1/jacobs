@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacobs Electrical Limited - Professional Electrical Services in Lusaka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Jacobs Electrical</h1>
+                <p>Limited</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Electrical Solutions</h1>
+                <p>Providing reliable electrical services for residential, commercial, and industrial clients in Lusaka and beyond.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive electrical solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Installations</h3>
+                    <p>Complete electrical systems for offices, retail spaces, and commercial buildings with focus on safety and efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Wiring</h3>
+                    <p>Expert home electrical installations, upgrades, and renovations for modern living spaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industrial Solutions</h3>
+                    <p>Heavy-duty electrical systems for factories, warehouses, and industrial facilities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Solar Installations</h3>
+                    <p>Renewable energy solutions with solar panel installation and maintenance services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Repairs</h3>
+                    <p>Prompt and reliable electrical repair services with 24/7 emergency support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Power Backup Systems</h3>
+                    <p>Generator installations and uninterrupted power supply solutions for continuous operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p>A showcase of our recent electrical installations and solutions</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+                <button class="filter-btn" data-filter="solar">Solar</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img">
+                        <img src="images/project1.jpg" alt="Commercial Office Building">
+                    </div>
+                    <div class="project-info">
+                        <h3>Lusaka Business Park</h3>
+                        <p>Complete electrical installation for a 5-story office complex</p>
+                        <span class="project-category">Commercial</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
+                    <div class="project-img">
+                        <img src="images/project2.jpg" alt="Luxury Residential Home">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kabulonga Residence</h3>
+                        <p>Smart home electrical systems with automated lighting and security</p>
+                        <span class="project-category">Residential</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="industrial">
+                    <div class="project-img">
+                        <img src="images/project3.jpg" alt="Manufacturing Plant">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kafue Manufacturing Plant</h3>
+                        <p>Industrial-grade electrical infrastructure for heavy machinery</p>
+                        <span class="project-category">Industrial</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="solar">
+                    <div class="project-img">
+                        <img src="images/project4.jpg" alt="Solar Panel Installation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Chilanga Solar Farm</h3>
+                        <p>50kW solar installation for sustainable energy production</p>
+                        <span class="project-category">Solar</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img">
+                        <img src="images/project5.jpg" alt="Shopping Mall">
+                    </div>
+                    <div class="project-info">
+                        <h3>Manda Hill Mall</h3>
+                        <p>Electrical upgrades and maintenance for retail spaces</p>
+                        <span class="project-category">Commercial</span>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
+                    <div class="project-img">
+                        <img src="images/project6.jpg" alt="Apartment Complex">
+                    </div>
+                    <div class="project-info">
+                        <h3>Garden City Apartments</h3>
+                        <p>Complete wiring for a 24-unit residential complex</p>
+                        <span class="project-category">Residential</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our satisfied customers have to say</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Jacobs Electrical Limited provided exceptional service for our office building. Their team was professional, punctual, and delivered quality work within budget."</p>
+                        <div class="client-info">
+                            <h4>Michael Banda</h4>
+                            <p>Facility Manager, Lusaka Business Park</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"We hired Jacobs for our home renovation project, and they exceeded our expectations. The smart home features they installed have made our lives so much easier."</p>
+                        <div class="client-info">
+                            <h4>Sarah Mwanza</h4>
+                            <p>Homeowner, Kabulonga</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Their industrial electrical work at our manufacturing plant was completed on time and with the highest standards of safety. Highly recommended!"</p>
+                        <div class="client-info">
+                            <h4>David Mulenga</h4>
+                            <p>Operations Director, Kafue Industries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Tips</h2>
+                <p>Insights and updates from our electrical experts</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/blog1.jpg" alt="Energy Saving Tips">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 15, 2023</span>
+                        <h3>10 Energy-Saving Tips for Your Home</h3>
+                        <p>Learn how to reduce your electricity bills with these simple but effective energy-saving strategies.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/blog2.jpg" alt="Solar Power Benefits">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">May 28, 2023</span>
+                        <h3>The Benefits of Solar Power in Zambia</h3>
+                        <p>Discover why solar energy is becoming increasingly popular and how it can benefit your home or business.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/blog3.jpg" alt="Electrical Safety">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">April 10, 2023</span>
+                        <h3>Electrical Safety: What Every Homeowner Should Know</h3>
+                        <p>Essential safety tips to protect your family and property from electrical hazards.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>About Jacobs Electrical Limited</h2>
+                        <p>Your trusted electrical partner since 2005</p>
+                    </div>
+                    <p>Jacobs Electrical Limited is a leading electrical contractor in Lusaka, Zambia, providing comprehensive electrical services for residential, commercial, and industrial clients. With over 18 years of experience in the industry, we have built a reputation for excellence, reliability, and customer satisfaction.</p>
+                    <p>Our team consists of certified electricians and engineers who are committed to delivering high-quality workmanship and innovative solutions. We pride ourselves on staying up-to-date with the latest electrical technologies and industry standards to ensure our clients receive the best service possible.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>18+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Jacobs Electrical Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for a free consultation and quote</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Kabelnega Road, Lusaka, Zambia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+260 97 1234567</p>
+                            <p>+260 96 7654321</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@jacobselectrical.com</p>
+                            <p>support@jacobselectrical.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="">Select Service</option>
+                                <option value="commercial">Commercial Installation</option>
+                                <option value="residential">Residential Wiring</option>
+                                <option value="industrial">Industrial Solutions</option>
+                                <option value="solar">Solar Installation</option>
+                                <option value="maintenance">Maintenance & Repairs</option>
+                                <option value="backup">Power Backup Systems</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="map-container">
+            <!-- Replace with actual Google Maps embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15456.734254115684!2d28.2833!3d-15.4167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b9a7cfaabf7%3A0x9a0f0f271c9c322c!2sLusaka%2C%20Zambia!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Jacobs Electrical</h2>
+                    <p>Limited</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="#services">Commercial Installations</a></li>
+                            <li><a href="#services">Residential Wiring</a></li>
+                            <li><a href="#services">Industrial Solutions</a></li>
+                            <li><a href="#services">Solar Installations</a></li>
+                            <li><a href="#services">Maintenance & Repairs</a></li>
+                            <li><a href="#services">Power Backup Systems</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Kabelnega Road, Lusaka, Zambia</li>
+                            <li><i class="fas fa-phone-alt"></i> +260 97 1234567</li>
+                            <li><i class="fas fa-envelope"></i> info@jacobselectrical.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jacobs Electrical Limited. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
